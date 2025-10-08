@@ -30,6 +30,7 @@ public class TorpedoStore {
   }
 
   public boolean fire(int numberOfTorpedos){
+    // check if the number of torpedos carried by the ship is bugged
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
     }
